@@ -100,7 +100,7 @@ int[] vect = new int[5];
 for (int i = 0; i < 5; i++)
 {
     int max = matrix[i, 0];
-    for (int j = 1; j < 5; j++)
+    for (int j = 1; j < 6; j++)
     {
         if (matrix[i, j] > max)
         {
@@ -112,9 +112,9 @@ for (int i = 0; i < 5; i++)
 
 int lenOfVect = vect.Length;
 Console.WriteLine("Vector: ");
-foreach (int element in vect)
+for(int i = 0; i < vect.Length; i++)
 {
-    Console.Write(element + " ");
+    Console.Write(vect[i] + " ");
 }
 
 int minIndex = Array.IndexOf(vect, vect.Min());
