@@ -27,30 +27,30 @@ while (intN > 0)
 
 string result = (evenDigits > oddDigits) ? "Number has more even numbers" :
                 (oddDigits > evenDigits) ? "Number has more odd numbers" :
-                "Including even and odd numbers";
+                "The same number of even and odd numbers";
 Console.WriteLine(result);
 
 // Task2
 Console.WriteLine("Enter x, y and z: ");
 string x = Console.ReadLine();
-int intX;
-if (int.TryParse(x, out intX))
+double intX;
+if (double.TryParse(x, out intX))
 { }
 else
 {
     Console.WriteLine("Failed to parse string value to integer value.");
 }
 string y = Console.ReadLine();
-int intY;
-if (int.TryParse(y, out intY))
+double intY;
+if (double.TryParse(y, out intY))
 { }
 else
 {
     Console.WriteLine("Failed to parse string value to integer value.");
 }
 string z = Console.ReadLine();
-int intZ;
-if (int.TryParse(z, out intZ))
+double intZ;
+if (double.TryParse(z, out intZ))
 { }
 else
 {
@@ -72,7 +72,7 @@ double c = 5 * (intX * Math.Cos(intZ) - intZ * Math.Cos(intY) + intY * Math.Cos(
 
 Console.WriteLine("a = {0:n5} b = {1:n5} c = {2:n5}", a, b, c);
 double maxAndMin = Math.Max(a, Math.Min(b, c));
-Console.WriteLine("{0:n5}", maxAndMin);
+Console.WriteLine("max between a and min(b,c): {0:n5}", maxAndMin);
 
 // Task3
 int[,] matrix = new int[5, 6];
