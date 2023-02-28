@@ -33,24 +33,24 @@ Console.WriteLine(result);
 // Task2
 Console.WriteLine("Enter x, y and z: ");
 string x = Console.ReadLine();
-double intX;
-if (double.TryParse(x, out intX))
+double doubleX;
+if (double.TryParse(x, out doubleX))
 { }
 else
 {
     Console.WriteLine("Failed to parse string value to integer value.");
 }
 string y = Console.ReadLine();
-double intY;
-if (double.TryParse(y, out intY))
+double doubleY;
+if (double.TryParse(y, out doubleY))
 { }
 else
 {
     Console.WriteLine("Failed to parse string value to integer value.");
 }
 string z = Console.ReadLine();
-double intZ;
-if (double.TryParse(z, out intZ))
+double doubleZ;
+if (double.TryParse(z, out doubleZ))
 { }
 else
 {
@@ -66,9 +66,9 @@ static int Factorial(int n)
     }
     return temp;
 }
-double a = Math.Pow(intX, 2) / Factorial(2) + Math.Pow(intX, 4) / Factorial(4) + Math.Pow(intX, 6) / Factorial(6);
-double b = Math.Sin(3 * Math.PI / 4) + intX * Math.Cos(intZ) - intZ * Math.Cos(intY) + intY * Math.Cos(intX);
-double c = 5 * (intX * Math.Cos(intZ) - intZ * Math.Cos(intY) + intY * Math.Cos(intX));
+double a = Math.Pow(doubleX, 2) / Factorial(2) + Math.Pow(doubleX, 4) / Factorial(4) + Math.Pow(doubleX, 6) / Factorial(6);
+double b = Math.Sin(3 * Math.PI / 4) + doubleX * Math.Cos(doubleZ) - doubleZ * Math.Cos(doubleY) + doubleY * Math.Cos(doubleX);
+double c = 5 * (doubleX * Math.Cos(doubleZ) - doubleZ * Math.Cos(doubleY) + doubleY * Math.Cos(doubleX));
 
 Console.WriteLine("a = {0:n5} b = {1:n5} c = {2:n5}", a, b, c);
 double maxAndMin = Math.Max(a, Math.Min(b, c));
@@ -110,7 +110,6 @@ for (int i = 0; i < 5; i++)
     vect[i] = max;
 }
 
-int lenOfVect = vect.Length;
 Console.WriteLine("Vector: ");
 for(int i = 0; i < vect.Length; i++)
 {
